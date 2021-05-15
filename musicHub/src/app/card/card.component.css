@@ -18,7 +18,7 @@ font-family: 'Material Icons';
 }
 
 .icon{
-  margin-right: 6px;
+  margin-right: 10px;
 }
 
 .btn-style{
@@ -27,4 +27,8 @@ font-family: 'Material Icons';
   padding: 0px;
   margin: 0 px;
   cursor: pointer;
+}
+
+.btn-style:not([disabled]):hover {
+  transform: scale(1.2);
 }
