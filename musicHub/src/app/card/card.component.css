@@ -2,8 +2,29 @@
     max-width: 400px;
   }
   
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
-  
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.icons-row{
+display: flex;
+flex-direction: row;
+font-family: 'Material Icons';
+}
+
+.push-right {
+  margin-left: auto
+}
+
+.icon{
+  margin-right: 6px;
+}
+
+.btn-style{
+  border-style: none;
+  background-color: transparent;
+  padding: 0px;
+  margin: 0 px;
+  cursor: pointer;
+}
