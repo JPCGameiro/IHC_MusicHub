@@ -31,4 +31,5 @@ font-family: 'Material Icons';
 
 .btn-style:not([disabled]):hover {
   transform: scale(1.2);
+  transition: ease;
 }
