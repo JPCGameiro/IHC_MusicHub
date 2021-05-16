@@ -1,5 +1,12 @@
+.center {
+  margin: auto;
+  width: 50%;
+  padding: center;
+}
+
 .example-card {
-    max-width: 400px;
+    max-width: 800px;
+    align-self: center;
   }
   
 .example-header-image {
@@ -14,7 +21,7 @@ font-family: 'Material Icons';
 }
 
 .push-right {
-  margin-left: auto
+  margin-left: auto;
 }
 
 .icon{
