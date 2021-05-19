@@ -1,0 +1,28 @@
+
+
+#men-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.mensagix-icon{
+    height: 35px;
+}
+
+.mensagix-header{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hrrr{
+    height: 2px;
+    position: relative;
+    margin: 0 -16px;
+    margin-top: 10px;
+}
+
+.matdiv{
+    position: relative;
+}

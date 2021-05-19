@@ -10,6 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { MessengerComponent } from './messenger/messenger.component';
+import {MatDividerModule} from '@angular/material/divider';
+import { MessengercontactComponent } from './messengercontact/messengercontact.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,16 @@ import { MessengerComponent } from './messenger/messenger.component';
     CardComponent,
     NavbarComponent,
     JumbotronComponent,
-    MessengerComponent
+    MessengerComponent,
+    MessengercontactComponent
   ],
   imports: [
     BrowserModule,
     MatCardModule,
     NoopAnimationsModule,
     FontAwesomeModule,
-    MatIconModule
+    MatIconModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
