@@ -2,3 +2,14 @@
     align-items: center;
     padding: 25px;
 }
+
+.main{
+    height: 460px;
+    background-image: url("./guitar.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.mycontainer{
+    padding-top: 4em;
+}
