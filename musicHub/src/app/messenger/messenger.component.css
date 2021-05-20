@@ -1,5 +1,4 @@
 
-
 #men-header{
     display: flex;
     flex-direction: row;
@@ -25,4 +24,8 @@
 
 .matdiv{
     position: relative;
+}
+
+.men-contacts{
+    min-height: 37em;
 }
