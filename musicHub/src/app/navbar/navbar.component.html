@@ -9,51 +9,17 @@
 
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
-<nav id="scanfcode" class="navbar">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" id="toogle-button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-         <span class="glyphicon glyphicon-menu-hamburger"></span>                     
-        </button>
-        <a id="logo" class="navbar-brand" href="#">MusicHUB</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-   
-        <ul id="link" class="nav navbar-nav navbar-right">
-            <li class="dropdown" id="first-link">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home</a>
-            </li>
-           <li class="dropdown" id="first-link">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Musicians</a>
-          </li>
-          <li class="dropdown" id="first-link">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Establishments</a>
-          </li>
-          <li class="dropdown" id="first-link">
-            <a href='#'><span class="glyphicon glyphicon-comment"></span></a>
-            <div class="dropdown-content">
-              <p><a class="dropdown-toggle" data-toggle="dropdown" href="#">Establishments</a></p>
-              <p><a class="dropdown-toggle" data-toggle="dropdown" href="#">Establishments</a></p>
-              <p><a class="dropdown-toggle" data-toggle="dropdown" href="#">Establishments</a></p>
-            </div>
-          </li>
-          <li class="dropdown" id="first-link">
-            <a href='#'><span class="glyphicon glyphicon-bell"></span></a>
-            <div class="dropdown-content">
-              <p><a class="dropdown-toggle" data-toggle="dropdown" href="#">Establishments</a></p>
-              <p><a class="dropdown-toggle" data-toggle="dropdown" href="#">Establishments</a></p>
-              <p><a class="dropdown-toggle" data-toggle="dropdown" href="#">Establishments</a></p>
-            </div>
-          </li>
-          <li class="dropdown" id="first-link">
-            <a href='#'><span class="glyphicon glyphicon-user"></span></a>
-          </li>
-          <li class="dropdown" id="first-link">
-            <a href='#'><span class="glyphicon glyphicon-log-out"></span></a>
-          </li>
-          <!--<li id="button-link"><a href="#">LogOut</a></li>-->
-        </ul>
-      </div>
-    </div>
-  </nav>
+<!-- Top navigation -->
+<div id="navbar">
+  <a href="#default" id="logo">MusicHUB</a>
+  <a href="#home" class="active">Home</a>
+  <a href="#about">Musicians</a>
+  <a href="#contact">Establishments</a>
+  <div id="navbar-right">
+    <a href="#contact"><span class="glyphicon glyphicon-bell"></span></a>
+    <a href="#contact"><span class="glyphicon glyphicon-send"></span></a>
+    <a href="#contact"><span class="glyphicon glyphicon-user"></span></a>
+    <a href="#contact"><span class="glyphicon glyphicon-log-out"></span></a>
   
+  </div>
+</div>
