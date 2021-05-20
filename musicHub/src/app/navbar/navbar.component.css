@@ -8,7 +8,7 @@ body
 {
   border-radius:0px;
   background:#fff;
-  padding:10px;
+  padding:5px;
   top: 15px;
   font-size:14px;
   margin-left: 30px;
@@ -17,7 +17,7 @@ body
 /* logo or main heading */
 #logo
 {
-  font-size:22px;
+  font: size 22px;
   font-weight:bolder;
   color:#3d9bc7;
   letter-spacing:2px;
@@ -35,7 +35,7 @@ body
 #first-link
 {
   padding-right:6px;
-  border-right:solid 1px #ccc;
+  border-right:solid 1px rgb(204, 204, 204);
 }
 
 #icons-link

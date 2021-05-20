@@ -2,19 +2,22 @@
 #contact-container{
     margin-top: 5px;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#contact-container:hover{
+    background-color: #f0f5f5;
 }
 
 .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
-    cursor: pointer;
   }
 
 .contact-user{
     font-size: medium;
     font-weight: 400;
     margin-bottom: 5px;
-    cursor:pointer
 }
 
 .contact-descr{
