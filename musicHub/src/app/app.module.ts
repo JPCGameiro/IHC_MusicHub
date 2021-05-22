@@ -12,6 +12,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { MessengerComponent } from './messenger/messenger.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { MessengercontactComponent } from './messengercontact/messengercontact.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MessengercontactComponent } from './messengercontact/messengercontact.c
     NavbarComponent,
     JumbotronComponent,
     MessengerComponent,
-    MessengercontactComponent
+    MessengercontactComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,
