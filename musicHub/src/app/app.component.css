@@ -13,3 +13,19 @@
 .mycontainer{
     padding-top: 4em;
 }
+
+.icon-border{
+    border: 1px black solid;
+    border-radius: 50px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 35px;
+    right: 150px;
+
+    
+}
+
+.mensagix-icon-dynamic{
+    height:45px;
+    margin: 10px;
+}
