@@ -1,0 +1,39 @@
+<br><br>
+<div class="center">
+    <h1>Search by...</h1>
+    <br>
+    <div class="row">
+        <div class="column">
+            <mat-form-field appearance="fill" *ngIf="router.url === '/musicians'">
+                <mat-label>Band/Musician</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill" *ngIf="router.url === '/establishments'">
+                <mat-label>Establishments</mat-label>
+                <input matInput>
+            </mat-form-field>
+        </div>
+        <div class="column">
+            <mat-form-field appearance="fill">
+                <mat-label>Location</mat-label>
+                <input matInput>
+            </mat-form-field>
+        </div>
+        <div class="column">
+            <mat-form-field appearance="fill" style="color: dodgerblue;">
+                <mat-label>Genre</mat-label>
+                <mat-select>
+                <mat-option value="rock">Rock </mat-option>
+                <mat-option value="pop">Pop </mat-option>
+                <mat-option value="jazz">Jazz </mat-option>
+                <mat-option value="rap">Rap </mat-option>
+                <mat-option value="classic">Clássico </mat-option>
+                <mat-option value="metal">Metal </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <br>
+    <div class="button_cont" align="center"><a class="example_c" href="/musicians"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</a></div>
+    <br>
+</div>

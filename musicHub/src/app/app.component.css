@@ -1,31 +1,19 @@
-.navOption{
-    align-items: center;
-    padding: 25px;
-}
-
-.main{
-    height: 460px;
-    background-image: url("./guitar.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.mycontainer{
-    padding-top: 4em;
-}
-
-.icon-border{
-    border: 1px black solid;
-    border-radius: 50px;
-    cursor: pointer;
-    position: fixed;
-    bottom: 35px;
-    right: 150px;
-
-    
-}
-
-.mensagix-icon-dynamic{
-    height:45px;
-    margin: 10px;
-}
+.example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .example-container .mat-form-field {
+    width: 220px;
+  }
+  
+  .example-container form {
+    margin-bottom: 20px;
+  }
+  
+  .example-container form > * {
+    margin: 5px 0;
+  }
+  
+  .example-container .mat-radio-button {
+    margin: 0 12px;
+  }
