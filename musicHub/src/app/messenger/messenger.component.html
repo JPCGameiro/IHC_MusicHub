@@ -15,12 +15,29 @@
             <app-messengercontact (click)="toogleMXshow()"></app-messengercontact>
         </div>
         <ng-template #indivMX>
-            <div class="indiv-header">
-                <mat-icon (click)="toogleMXshow()" class="backwards-icon">keyboard_arrow_left</mat-icon>
-                <mat-card-header>
-                    <div mat-card-avatar class="example-header-image"></div>
-                    <mat-card-title class="myUser">Foo fighters</mat-card-title>
-                </mat-card-header>
+            <div class="indiv">
+                <div class="indiv-header">
+                    <mat-icon (click)="toogleMXshow()" class="backwards-icon">keyboard_arrow_left</mat-icon>
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title class="myUser">Foo fighters</mat-card-title>
+                    </mat-card-header>
+                </div>
+                <div class="indiv-bottom">
+                    <span class="btn-style">
+                        <mat-icon>insert_emoticon</mat-icon>
+                    </span>
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width">
+                          <mat-label>Message</mat-label>
+                          <input class="myinput" matInput #message maxlength="256" placeholder="">
+                          <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+                        </mat-form-field>
+                    </form>
+                    <span class="btn-style">
+                        <mat-icon>send</mat-icon>
+                    </span>
+                </div>
             </div>
         </ng-template>
     </div>

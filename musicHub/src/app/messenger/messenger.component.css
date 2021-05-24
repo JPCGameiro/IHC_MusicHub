@@ -44,11 +44,29 @@
     margin-left: 10px;
   }
 
+.indiv{
+    display: flex;
+    flex-direction: column;
+    height: 37em;
+    justify-content: space-between;
+}
+
 .indiv-header{
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     margin: 5px;
     box-shadow: rgba(33, 35, 38, 0.10) 0px 10px 10px -10px;
+}
+
+.indiv-bottom{
+    justify-content: end;
+    margin: 5px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: rgba(33, 35, 38, 0.10) 0px -10px 10px -10px;
 }
 
 .myUser{
@@ -62,3 +80,40 @@ mat-card-header{
 .hr{
     margin: 0;
 }
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .btn-style:not([disabled]):hover {
+    transform: scale(1.2);
+    transition: ease;
+    cursor: pointer;
+  }
+
+  .myinput{
+      font-size: 18px;
+  }
+
+  ::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: grey !important;
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: grey !important;
+  } 
+  
+  ::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: green !important;;
+  }

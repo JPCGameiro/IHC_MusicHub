@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmojiButton } from '@joeattardi/emoji-button';
 
 @Component({
   selector: 'app-messenger',
@@ -7,12 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessengerComponent implements OnInit {
   toogleMX :boolean;
-
   indivMX
+  
 
-  constructor() { 
-    
-  }
+  
 
   toogleMXshow(){
     this.toogleMX = !this.toogleMX;
@@ -22,6 +21,10 @@ export class MessengerComponent implements OnInit {
 
   ngOnInit(): void {
     this.toogleMX = true;
+  }
+
+  constructor() { 
+    
   }
 
 }
