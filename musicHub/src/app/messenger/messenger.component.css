@@ -30,3 +30,35 @@
 .men-contacts{
     min-height: 37em;
 }
+
+.backwards-icon{
+    transform: scale(1.6);
+    cursor: pointer;
+    margin-top: 7px;
+    
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+    margin-left: 10px;
+  }
+
+.indiv-header{
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+    box-shadow: rgba(33, 35, 38, 0.10) 0px 10px 10px -10px;
+}
+
+.myUser{
+    margin-top:5px;
+}
+
+mat-card-header{
+    margin-left: 20px;
+}
+
+.hr{
+    margin: 0;
+}

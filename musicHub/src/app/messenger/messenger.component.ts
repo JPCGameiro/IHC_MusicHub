@@ -6,12 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./messenger.component.css']
 })
 export class MessengerComponent implements OnInit {
+  toogleMX :boolean;
 
-  
+  indivMX
 
-  constructor() { }
+  constructor() { 
+    
+  }
+
+  toogleMXshow(){
+    this.toogleMX = !this.toogleMX;
+  }
+
+
 
   ngOnInit(): void {
+    this.toogleMX = true;
   }
 
 }
