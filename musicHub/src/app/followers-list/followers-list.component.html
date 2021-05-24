@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="router.url === '/musicians'">
     <h1>Followed Artists</h1>
     <div class="row">
         <div>
@@ -61,4 +61,72 @@
             </div>
     	</div>
 	</div>
+</div>
+
+
+
+
+<div class="container" *ngIf="router.url === '/establishments'">
+  <h1>Followed Artists</h1>
+  <div class="row">
+      <div>
+          <div class="people-nearby">
+            
+            <div class="nearby-user">
+              <div class="row">
+                <div class="col-md-2 col-sm-2">
+                  <img src="https://cdn3.vectorstock.com/i/1000x1000/05/57/jazz-cafe-logo-in-neon-style-neon-sign-symbol-vector-20060557.jpg" alt="user" class="profile-photo-lg">
+                </div>
+                <div class="col-md-7 col-sm-7">
+                  <h5><a href="#" class="profile-link">Café João Batista</a></h5>
+                  <p>Rock</p>
+                  <p class="text-muted">Aveiro - Santa Joana - 150m away</p>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <button class="btn btn-primary pull-right">Following</button>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <br><button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-send"></span></button>
+                </div>
+              </div>
+            </div>
+            <div class="nearby-user">
+              <div class="row">
+                <div class="col-md-2 col-sm-2">
+                  <img src="https://brandcrowd.com/gallery/brands/pictures/picture15442240094473.jpg" alt="user" class="profile-photo-lg">
+                </div>
+                <div class="col-md-7 col-sm-7">
+                  <h5><a href="#" class="profile-link">Jazz Coffee</a></h5>
+                  <p>Jazz</p>
+                  <p class="text-muted">Lisboa - 1200m away</p>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <button class="btn btn-primary pull-right">Following</button>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <br><button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-send"></span></button>
+                </div>
+              </div>
+            </div>
+            <div class="nearby-user">
+              <div class="row">
+                <div class="col-md-2 col-sm-2">
+                  <img src="https://lh3.googleusercontent.com/proxy/wB_c3dPkWXpsoSfpalcYs8t4eyKN-q_Uc5yTMSBx9D7jWz3OnHPEAEspRRBqmcDQl0YNv948zwPfh8Tcg724WmzW2Ro038rLA9TbMck5KDpBZ5pshRTYHIe7HQ" alt="user" class="profile-photo-lg">
+                </div>
+                <div class="col-md-7 col-sm-7">
+                  <h5><a href="#" class="profile-link">Gilman Street </a></h5>
+                  <p>Punk Rock Club</p>
+                  <p class="text-muted">USA - California - 2.5km away</p>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <button class="btn btn-primary pull-right">Following</button>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <br><button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-send"></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
 </div>

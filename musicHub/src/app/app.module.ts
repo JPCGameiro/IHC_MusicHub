@@ -25,6 +25,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { EstablishmentsPageComponent } from './establishments-page/establishments-page.component';
 import { SearchDivComponent } from './search-div/search-div.component';
 import { FollowersListComponent } from './followers-list/followers-list.component';
+import { DiscoverListComponent } from './discover-list/discover-list.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { FollowersListComponent } from './followers-list/followers-list.componen
     HomePageComponent,
     EstablishmentsPageComponent,
     SearchDivComponent,
-    FollowersListComponent
+    FollowersListComponent,
+    DiscoverListComponent
   ],
   imports: [
     BrowserModule,
