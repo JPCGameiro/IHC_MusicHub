@@ -59,6 +59,8 @@ import { DiscoverListComponent } from './discover-list/discover-list.component';
       {path: 'musicians', component: MusiciansPageComponent},
       {path: '', component: HomePageComponent},
       {path: 'establishments', component: EstablishmentsPageComponent},
+      {path: 'searchmusicians', component: MusiciansPageComponent},
+      {path: 'searchestablishments', component: EstablishmentsPageComponent},
     ]),
   ],
   providers: [],

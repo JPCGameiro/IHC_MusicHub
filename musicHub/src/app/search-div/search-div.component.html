@@ -4,11 +4,11 @@
     <br>
     <div class="row">
         <div class="column">
-            <mat-form-field appearance="fill" *ngIf="router.url === '/musicians'">
+            <mat-form-field appearance="fill" *ngIf="router.url === '/musicians' || router.url === '/searchmusicians'">
                 <mat-label>Band/Musician</mat-label>
                 <input matInput>
             </mat-form-field>
-            <mat-form-field appearance="fill" *ngIf="router.url === '/establishments'">
+            <mat-form-field appearance="fill" *ngIf="router.url === '/establishments'  || router.url === '/searchestablishments'">
                 <mat-label>Establishments</mat-label>
                 <input matInput>
             </mat-form-field>
@@ -34,6 +34,9 @@
         </div>
     </div>
     <br>
-    <div class="button_cont" align="center"><a class="example_c" href="/musicians"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</a></div>
+    <div *ngIf="router.url === '/musicians'" class="button_cont" align="center"><a class="example_c" href="/searchmusicians"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</a></div>
+    <div *ngIf="router.url === '/establishments'" class="button_cont" align="center"><a class="example_c" href="/searchestablishments"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</a></div>
+    <div *ngIf="router.url === '/searchmusicians'" class="button_cont" align="center"><a class="example_c" href="/searchmusicians"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</a></div>
+    <div *ngIf="router.url === '/searchestablishments'" class="button_cont" align="center"><a class="example_c" href="/searchestablishments"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</a></div>
     <br>
 </div>

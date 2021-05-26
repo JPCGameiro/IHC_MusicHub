@@ -1,5 +1,5 @@
 
-<div id="navbar" *ngIf="router.url === '/musicians'">
+<div id="navbar" *ngIf="router.url === '/musicians' || router.url === '/searchmusicians'">
   <a href="/" id="logo">MusicHUB</a>
   <a href="/" >Home</a>
   <a href="/musicians" class="active">Musicians</a>
@@ -27,7 +27,7 @@
   </div>
 </div>
 
-<div id="navbar" *ngIf="router.url === '/establishments'">
+<div id="navbar" *ngIf="router.url === '/establishments' || router.url ==='/searchestablishments'">
   <a href="/" id="logo">MusicHUB</a>
   <a href="/">Home</a>
   <a href="/musicians">Musicians</a>

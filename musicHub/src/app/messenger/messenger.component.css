@@ -60,7 +60,7 @@
 }
 
 .indiv-bottom{
-    justify-content: end;
+    justify-content: flex-end;
     margin: 5px;
     padding-top: 5px;
     display: flex;
