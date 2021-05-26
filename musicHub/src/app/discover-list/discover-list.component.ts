@@ -10,6 +10,16 @@ export class DiscoverListComponent implements OnInit {
 
   constructor(public router: Router) { }
 
+  setSaving(element, text1, text2){
+    if(element.disabled){
+      element.textContent = text1;
+      element.disabled = false;
+    }else{
+      element.disabled = true;
+      element.textContent = text2;
+    }
+  }
+  
   ngOnInit(): void {
   }
 
