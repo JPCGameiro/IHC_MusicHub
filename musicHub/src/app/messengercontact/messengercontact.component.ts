@@ -14,6 +14,21 @@ export class MessengercontactComponent implements OnInit {
     smldescription: "you: See you there then!  - 2d ago"
   }
 
+  exampleContact1 : Contact = {
+    username : "Green Day",
+    smldescription: "them: great to see u!  - 5h ago"
+  }
+
+  exampleContact2 : Contact = {
+    username : "Three Doors Down",
+    smldescription: ""
+  }
+
+  exampleContact3 : Contact = {
+    username : "Mariza",
+    smldescription: "them: Nice!  - 4h ago"
+  }
+
   constructor() { }
 
   ngOnInit(): void {
