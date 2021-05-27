@@ -1,15 +1,16 @@
-
-<div id="navbar" *ngIf="router.url === '/musicians' || router.url === '/searchmusicians'">
+<div
+  id="navbar"
+  *ngIf="router.url === '/musicians' || router.url === '/searchmusicians'"
+>
   <a href="/" id="logo">MusicHUB</a>
-  <a href="/" >Home</a>
+  <a href="/">Home</a>
   <a href="/musicians" class="active">Musicians</a>
   <a href="/establishments">Establishments</a>
   <div id="navbar-right">
-    <a ><span class="glyphicon glyphicon-bell"></span></a>
-    <a ><span class="glyphicon glyphicon-send"></span></a>
-    <a ><span class="glyphicon glyphicon-user"></span></a>
-    <a ><span class="glyphicon glyphicon-log-out"></span></a>
-  
+    <a><span class="glyphicon glyphicon-bell"></span></a>
+    <a><span class="glyphicon glyphicon-send"></span></a>
+    <a href="/profile"><span class="glyphicon glyphicon-user"></span></a>
+    <a><span class="glyphicon glyphicon-log-out"></span></a>
   </div>
 </div>
 
@@ -19,24 +20,27 @@
   <a href="/musicians">Musicians</a>
   <a href="/establishments">Establishments</a>
   <div id="navbar-right">
-    <a ><span class="glyphicon glyphicon-bell"></span></a>
-    <a ><span class="glyphicon glyphicon-send"></span></a>
-    <a ><span class="glyphicon glyphicon-user"></span></a>
-    <a ><span class="glyphicon glyphicon-log-out"></span></a>
-  
+    <a><span class="glyphicon glyphicon-bell"></span></a>
+    <a><span class="glyphicon glyphicon-send"></span></a>
+    <a><span class="glyphicon glyphicon-user"></span></a>
+    <a><span class="glyphicon glyphicon-log-out"></span></a>
   </div>
 </div>
 
-<div id="navbar" *ngIf="router.url === '/establishments' || router.url ==='/searchestablishments'">
+<div
+  id="navbar"
+  *ngIf="
+    router.url === '/establishments' || router.url === '/searchestablishments'
+  "
+>
   <a href="/" id="logo">MusicHUB</a>
   <a href="/">Home</a>
   <a href="/musicians">Musicians</a>
   <a href="/establishments" class="active">Establishments</a>
   <div id="navbar-right">
-    <a ><span class="glyphicon glyphicon-bell"></span></a>
-    <a ><span class="glyphicon glyphicon-send"></span></a>
-    <a ><span class="glyphicon glyphicon-user"></span></a>
-    <a ><span class="glyphicon glyphicon-log-out"></span></a>
-  
+    <a><span class="glyphicon glyphicon-bell"></span></a>
+    <a><span class="glyphicon glyphicon-send"></span></a>
+    <a><span class="glyphicon glyphicon-user"></span></a>
+    <a><span class="glyphicon glyphicon-log-out"></span></a>
   </div>
 </div>
