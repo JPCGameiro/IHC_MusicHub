@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatCardModule } from '@angular/material/card';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatIconModule } from '@angular/material/icon';
-import { MatFormFieldModule } from '@angular/material/form-field'; 
-import { MatSelectModule } from '@angular/material/select'; 
-import { CommonModule } from '@angular/common'; 
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input'; 
+import { MatInputModule } from '@angular/material/input';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
@@ -26,6 +26,7 @@ import { EstablishmentsPageComponent } from './establishments-page/establishment
 import { SearchDivComponent } from './search-div/search-div.component';
 import { FollowersListComponent } from './followers-list/followers-list.component';
 import { DiscoverListComponent } from './discover-list/discover-list.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { DiscoverListComponent } from './discover-list/discover-list.component';
     EstablishmentsPageComponent,
     SearchDivComponent,
     FollowersListComponent,
-    DiscoverListComponent
+    DiscoverListComponent,
+    ProfilePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,14 +58,15 @@ import { DiscoverListComponent } from './discover-list/discover-list.component';
     CommonModule,
     MatInputModule,
     RouterModule.forRoot([
-      {path: 'musicians', component: MusiciansPageComponent},
-      {path: '', component: HomePageComponent},
-      {path: 'establishments', component: EstablishmentsPageComponent},
-      {path: 'searchmusicians', component: MusiciansPageComponent},
-      {path: 'searchestablishments', component: EstablishmentsPageComponent},
+      { path: 'musicians', component: MusiciansPageComponent },
+      { path: '', component: HomePageComponent },
+      { path: 'establishments', component: EstablishmentsPageComponent },
+      { path: 'searchmusicians', component: MusiciansPageComponent },
+      { path: 'searchestablishments', component: EstablishmentsPageComponent },
+      { path: 'profile', component: ProfilePageComponent },
     ]),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
