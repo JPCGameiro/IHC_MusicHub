@@ -72,7 +72,7 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: #1369ce;
+    background-color: dodgerblue;
     position: absolute;
     bottom: -100px;
     left: 0;
@@ -97,7 +97,7 @@
   }
   
   .our-team .social li a:hover {
-    color: #1369ce;
+    color: dodgerblue;
     background-color: #f7f5ec;
     cursor: pointer;
   }

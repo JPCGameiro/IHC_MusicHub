@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ARTISTS } from '../mock-musicians';
 
 @Component({
   selector: 'app-followers-list',
@@ -9,6 +10,8 @@ import { Router } from '@angular/router';
 export class FollowersListComponent implements OnInit {
 
   constructor(public router: Router) { }
+
+  artists = ARTISTS
 
   ngOnInit(): void {
   }
