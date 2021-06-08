@@ -18,4 +18,5 @@ export const ARTISTS: Musician[] = [
   { id: 15, name: 'Slayer', location:'Seatle', genre: 'Metal' },
   { id: 16, name: 'Slipknot', location:'New York', genre: 'Metal' },
   { id: 17, name: 'Crumb', location:'New York', genre: 'Jazz' },
+  { id: 18, name: 'Fernando Daniel', location:'Viseu', genre: 'Pop' },
 ];

@@ -25,6 +25,27 @@ export class FollowersListComponent implements OnInit {
             }
           }
         }
+        else if(params['genre'] == "" && params['location'] != "" && params['musician'] == ""){
+          for( let a of ARTISTS){
+            if (a.location==params['location']){
+              this.artists.push(a)
+            }
+          }
+        }
+        else if(params['genre'] != "" && params['location'] != "" && params['musician'] == ""){
+          for( let a of ARTISTS){
+            if (a.genre==params['genre'] && a.location==params['location']){
+              this.artists.push(a)
+            }
+          }
+        }
+        else if(params['musician'] != ""){
+          for( let a of ARTISTS){
+            if (a.name==params['musician']){
+              this.artists.push(a)
+            }
+          }
+        }
       });
     }
     else if(this.router.url.startsWith('/searchestablishments?')){
@@ -34,6 +55,27 @@ export class FollowersListComponent implements OnInit {
         if(params['genre'] != "" && params['location'] == "" && params['establishment'] == ""){
           for( let p of PLACES){
             if (p.genre==params['genre']){
+              this.places.push(p)
+            }
+          }
+        }
+        else if(params['genre'] == "" && params['location'] != "" && params['establishment'] == ""){
+          for( let p of PLACES){
+            if (p.location==params['location']){
+              this.places.push(p)
+            }
+          }
+        }
+        else if(params['genre'] != "" && params['location'] != "" && params['establishment'] == ""){
+          for( let p of PLACES){
+            if (p.location==params['location'] && p.genre==params['genre']){
+              this.places.push(p)
+            }
+          }
+        }
+        else if(params['establishment'] != ""){
+          for( let p of PLACES){
+            if (p.name==params['establishment']){
               this.places.push(p)
             }
           }
