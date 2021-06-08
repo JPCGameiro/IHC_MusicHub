@@ -1,5 +1,6 @@
-<div class="container" *ngIf="router.url === '/musicians'">
-    <h1>Followed Artists</h1>
+<div class="container" *ngIf="router.url === '/musicians' || router.url.startsWith('/searchmusicians?')">
+    <h1  *ngIf="router.url === '/musicians'">Followed Artists</h1>
+    <h1  *ngIf="router.url.startsWith('/searchmusicians?')">Results</h1>
     <div class="row">
         <div>
             <div class="people-nearby"style="height: 510px; overflow: hidden; overflow-y: scroll;">
@@ -24,140 +25,39 @@
               </div>
             </div>
     	</div>
-	</div>
+	  </div>
 </div>
 
 
 
 
 
-
-<div class="container" *ngIf="router.url === '/searchmusicians'">
-  <h1>Results</h1>
+<div class="container" *ngIf="router.url === '/establishments' || router.url.startsWith('/searchestablishments?')">
+  <h1 *ngIf="router.url === '/establishments'">Followed Establishments</h1>
+  <h1 *ngIf="router.url.startsWith('/searchestablishments?')">Results</h1>
   <div class="row">
-      <div>
-          <div class="people-nearby">
-            
-            <div class="nearby-user">
-              <div class="row">
-                <div class="col-md-2 col-sm-2">
-                  <img src="https://i.pinimg.com/originals/ed/c2/4e/edc24e0b7ff91f16827917edd72c1bfe.jpg" alt="user" class="profile-photo-lg">
-                </div>
-                <div class="col-md-7 col-sm-7">
-                  <h5><a href="#" class="profile-link">Rage Against the Machine</a></h5>
-                  <p>Rock</p>
-                  <p class="text-muted">USA - Seatle - 500m away</p>
-                </div>
-                <div class="col-md-3 col-sm-3" style="text-align: right;">
-                  <button class="followbutton button1">Following</button>
-                </div>
-                <div class="col-md-3 col-sm-3" style="text-align: right;">
-                  <button class="followbutton button1" style="font-size: 20px;border-radius: 90%;"><i class="fab fa-facebook-messenger"></i></button>
-                </div>
+    <div>
+        <div class="people-nearby"style="height: 510px; overflow: hidden; overflow-y: scroll;">
+          
+          <div class="nearby-user" *ngFor="let m of places">
+            <div class="row">
+              <div class="col-md-2 col-sm-2">
+                <img src="https://image.freepik.com/free-vector/jazz-cafe-logo-neon-signs-style-text_118419-3148.jpg" alt="user" class="profile-photo-lg">
+              </div>
+              <div class="col-md-7 col-sm-7">
+                <h5><a href="#" class="profile-link">{{m.name}}</a></h5>
+                <p>{{m.genre}}</p>
+                <p class="text-muted">{{m.location}} - 500m away</p>
+              </div>
+              <div class="col-md-3 col-sm-3" style="text-align: right;">
+                <button class="followbutton button1">Following</button>
+              </div>
+              <div class="col-md-3 col-sm-3" style="text-align: right;">
+                <button class="followbutton button1" style="font-size: 20px;border-radius: 90%;"><i class="fab fa-facebook-messenger"></i></button>
               </div>
             </div>
           </div>
-    </div>
-</div>
-</div>
-
-
-
-
-
-
-<div class="container" *ngIf="router.url === '/establishments'">
-  <h1>Followed Artists</h1>
-  <div class="row">
-      <div>
-          <div class="people-nearby">
-            
-            <div class="nearby-user">
-              <div class="row">
-                <div class="col-md-2 col-sm-2">
-                  <img src="https://cdn3.vectorstock.com/i/1000x1000/05/57/jazz-cafe-logo-in-neon-style-neon-sign-symbol-vector-20060557.jpg" alt="user" class="profile-photo-lg">
-                </div>
-                <div class="col-md-7 col-sm-7">
-                  <h5><a href="#" class="profile-link">Café Marco Antunes</a></h5>
-                  <p>Rock</p>
-                  <p class="text-muted">Aveiro - Santa Joana - 150m away</p>
-                </div>
-                <div class="col-md-3 col-sm-3" style="text-align: right;">
-                  <button class="followbutton button1">Following</button>
-                </div>
-                <div class="col-md-3 col-sm-3" style="text-align: right;">
-                  <button class="followbutton button1" style="font-size: 20px;border-radius: 90%;"><i class="fab fa-facebook-messenger"></i></button>
-                </div>
-              </div>
-            </div>
-            <div class="nearby-user">
-              <div class="row">
-                <div class="col-md-2 col-sm-2">
-                  <img src="https://brandcrowd.com/gallery/brands/pictures/picture15442240094473.jpg" alt="user" class="profile-photo-lg">
-                </div>
-                <div class="col-md-7 col-sm-7">
-                  <h5><a href="#" class="profile-link">Jazz Coffee</a></h5>
-                  <p>Jazz</p>
-                  <p class="text-muted">Lisboa - 1200m away</p>
-                </div>
-                <div class="col-md-3 col-sm-3" style="text-align: right;">
-                  <button class="followbutton button1">Following</button>
-                </div>
-                <div class="col-md-3 col-sm-3" style="text-align: right;">
-                  <button class="followbutton button1" style="font-size: 20px;border-radius: 90%;"><i class="fab fa-facebook-messenger"></i></button>
-                </div>
-              </div>
-            </div>
-            <div class="nearby-user">
-              <div class="row">
-                <div class="col-md-2 col-sm-2">
-                  <img src="https://i.pinimg.com/originals/18/47/21/184721ee08b942e36cbf681ece394ede.jpg" alt="user" class="profile-photo-lg">
-                </div>
-                <div class="col-md-7 col-sm-7">
-                  <h5><a href="#" class="profile-link">Gilman Street </a></h5>
-                  <p>Punk Rock Club</p>
-                  <p class="text-muted">USA - California - 2.5km away</p>
-                </div>
-                <div class="col-md-3 col-sm-3" style="text-align: right;">
-                  <button class="followbutton button1">Following</button>
-                </div>
-                <div class="col-md-3 col-sm-3" style="text-align: right;">
-                  <button class="followbutton button1" style="font-size: 20px;border-radius: 90%;"><i class="fab fa-facebook-messenger"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="container" *ngIf="router.url === '/searchestablishments'">
-  <h1>Results</h1>
-  <div class="row">
-      <div>
-          <div class="people-nearby">
-            
-            <div class="nearby-user">
-              <div class="row">
-                <div class="col-md-2 col-sm-2">
-                  <img src="https://d1bvpoagx8hqbg.cloudfront.net/originals/o-mercado-negro-2491cb41c95828b3d0008ed47a5279b1.jpg" alt="user" class="profile-photo-lg">
-                </div>
-                <div class="col-md-7 col-sm-7">
-                  <h5><a href="#" class="profile-link"></a></h5>
-                  <p>Aveiro Jazz Bar</p>
-                  <p class="text-muted">Portugal - Aveiro - 52m away</p>
-                </div>
-                <div class="col-md-3 col-sm-3" style="text-align: right;">
-                  <button class="followbutton button1">Following</button>
-                </div>
-                <div class="col-md-3 col-sm-3" style="text-align: right;">
-                  <button class="followbutton button1" style="font-size: 20px;border-radius: 90%;"><i class="fab fa-facebook-messenger"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
     </div>
   </div>
 </div>

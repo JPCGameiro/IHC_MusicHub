@@ -1,6 +1,6 @@
 <div
   id="navbar"
-  *ngIf="router.url === '/musicians' || router.url === '/searchmusicians'"
+  *ngIf="router.url === '/musicians' || router.url.startsWith('/searchmusicians?')"
 >
   <a href="/" id="logo">MusicHUB</a>
   <a href="/">Home</a>
@@ -40,7 +40,7 @@
   </div>
 </div>
 
-<div id="navbar" *ngIf="router.url === '/establishments' || router.url === '/searchestablishments'">
+<div id="navbar" *ngIf="router.url === '/establishments' || router.url.startsWith('/searchestablishments?')">
   <a href="/" id="logo">MusicHUB</a>
   <a href="/">Home</a>
   <a href="/musicians">Musicians</a>

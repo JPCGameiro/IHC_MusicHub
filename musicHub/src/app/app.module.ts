@@ -8,6 +8,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
@@ -56,6 +57,7 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     MatSelectModule,
     FormsModule,
     CommonModule,
+    ReactiveFormsModule,
     MatInputModule,
     RouterModule.forRoot([
       { path: 'musicians', component: MusiciansPageComponent },

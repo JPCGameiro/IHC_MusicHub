@@ -1,42 +1,46 @@
 <br><br>
 <div class="center">
-    <h1>Search by...</h1>
-    <br>
-    <div class="row">
-        <div class="column">
-            <mat-form-field appearance="fill" *ngIf="router.url === '/musicians' || router.url === '/searchmusicians'">
-                <mat-label>Band/Musician</mat-label>
-                <input matInput>
-            </mat-form-field>
-            <mat-form-field appearance="fill" *ngIf="router.url === '/establishments'  || router.url === '/searchestablishments'">
-                <mat-label>Establishments</mat-label>
-                <input matInput>
-            </mat-form-field>
+    <form [formGroup] = "searchForm" (ngSubmit)="onSubmit()">
+        <h1>Search by...</h1>
+        <br>
+        <div class="row">
+            <div class="column">
+                <mat-form-field appearance="fill" *ngIf="router.url === '/musicians' || router.url.startsWith('/searchmusicians?')">
+                    <mat-label>Band/Musician</mat-label>
+                    <input matInput formControlName = "musician">
+                </mat-form-field>
+                <mat-form-field appearance="fill" *ngIf="router.url === '/establishments'  || router.url.startsWith('/searchestablishments?')">
+                    <mat-label>Establishments</mat-label>
+                    <input matInput formControlName = "establishment">
+                </mat-form-field>
+            </div>
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Location</mat-label>
+                    <input matInput formControlName = "location">
+                </mat-form-field>
+            </div>
+            <div class="column">
+                <mat-form-field appearance="fill" style="color: dodgerblue;">
+                    <mat-label>Genre</mat-label>
+                    <mat-select formControlName = "genre">
+                    <mat-option value="Rock">Rock </mat-option>
+                    <mat-option value="Pop">Pop </mat-option>
+                    <mat-option value="Jazz">Jazz </mat-option>
+                    <mat-option value="Rap">Rap </mat-option>
+                    <mat-option value="Classico">Clássico </mat-option>
+                    <mat-option value="Metal">Metal </mat-option>
+                    <mat-option value="Punk">Punk </mat-option>
+                    <mat-option value="Fado">Fado </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
         </div>
-        <div class="column">
-            <mat-form-field appearance="fill">
-                <mat-label>Location</mat-label>
-                <input matInput>
-            </mat-form-field>
-        </div>
-        <div class="column">
-            <mat-form-field appearance="fill" style="color: dodgerblue;">
-                <mat-label>Genre</mat-label>
-                <mat-select>
-                <mat-option value="rock">Rock </mat-option>
-                <mat-option value="pop">Pop </mat-option>
-                <mat-option value="jazz">Jazz </mat-option>
-                <mat-option value="rap">Rap </mat-option>
-                <mat-option value="classic">Clássico </mat-option>
-                <mat-option value="metal">Metal </mat-option>
-                </mat-select>
-            </mat-form-field>
-        </div>
-    </div>
-    <br>
-    <div *ngIf="router.url === '/musicians'" class="button_cont" align="center"><a class="example_c" href="/searchmusicians"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</a></div>
-    <div *ngIf="router.url === '/establishments'" class="button_cont" align="center"><a class="example_c" href="/searchestablishments"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</a></div>
-    <div *ngIf="router.url === '/searchmusicians'" class="button_cont" align="center"><a class="example_c" href="/searchmusicians"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</a></div>
-    <div *ngIf="router.url === '/searchestablishments'" class="button_cont" align="center"><a class="example_c" href="/searchestablishments"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</a></div>
-    <br>
+        <br>
+        <div *ngIf="router.url === '/musicians'" class="button_cont" align="center"><button type="submit" class="example_c"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</button></div>
+        <div *ngIf="router.url === '/establishments'" class="button_cont" align="center"><button type="submit" class="example_c"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</button></div>
+        <div *ngIf="router.url.startsWith('/searchmusicians?')" class="button_cont" align="center"><button type="submit" class="example_c"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</button></div>
+        <div *ngIf="router.url.startsWith('/searchestablishments?')" class="button_cont" align="center"><button type="submit" class="example_c"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</button></div>
+        <br>
+    </form>
 </div>

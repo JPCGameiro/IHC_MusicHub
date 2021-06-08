@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { ARTISTS } from '../mock-musicians';
+import { PLACES } from '../mock-establishments';
 
 @Component({
   selector: 'app-followers-list',
@@ -9,9 +10,37 @@ import { ARTISTS } from '../mock-musicians';
 })
 export class FollowersListComponent implements OnInit {
 
-  constructor(public router: Router) { }
-
   artists = ARTISTS
+  places = PLACES
+
+  constructor(public router: Router, public route: ActivatedRoute) { 
+    if(this.router.url.startsWith('/searchmusicians?')){
+      route.queryParams.subscribe(
+        params => {console.log('queryParams', params['genre'], params['location'], params['musician']);
+        this.artists = [];
+        if(params['genre'] != "" && params['location'] == "" && params['musician'] == ""){
+          for( let a of ARTISTS){
+            if (a.genre==params['genre']){
+              this.artists.push(a)
+            }
+          }
+        }
+      });
+    }
+    else if(this.router.url.startsWith('/searchestablishments?')){
+      route.queryParams.subscribe(
+        params => {console.log('queryParams', params['genre'], params['location'], params['establishment']);
+        this.places = [];
+        if(params['genre'] != "" && params['location'] == "" && params['establishment'] == ""){
+          for( let p of PLACES){
+            if (p.genre==params['genre']){
+              this.places.push(p)
+            }
+          }
+        }
+        });
+    }
+  }
 
   ngOnInit(): void {
   }
