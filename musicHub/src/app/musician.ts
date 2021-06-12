@@ -3,4 +3,5 @@ export interface Musician {
   name: string;
   location: string;
   genre: string;
+  follow: number;
 }

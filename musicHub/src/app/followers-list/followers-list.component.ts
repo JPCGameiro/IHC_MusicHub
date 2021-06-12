@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ARTISTS } from '../mock-musicians';
 import { PLACES } from '../mock-establishments';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-followers-list',

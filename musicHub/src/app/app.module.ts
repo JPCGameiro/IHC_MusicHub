@@ -28,6 +28,8 @@ import { SearchDivComponent } from './search-div/search-div.component';
 import { FollowersListComponent } from './followers-list/followers-list.component';
 import { DiscoverListComponent } from './discover-list/discover-list.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { EventCardComponent } from './event-card/event-card.component';
+import { MusicCardComponent } from './music-card/music-card.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     FollowersListComponent,
     DiscoverListComponent,
     ProfilePageComponent,
+    EventCardComponent,
+    MusicCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,6 +69,7 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
       { path: 'establishments', component: EstablishmentsPageComponent },
       { path: 'searchmusicians', component: MusiciansPageComponent },
       { path: 'searchestablishments', component: EstablishmentsPageComponent },
+      { path: 'musicianprofile', component: ProfilePageComponent },
       { path: 'profile', component: ProfilePageComponent },
     ]),
   ],
