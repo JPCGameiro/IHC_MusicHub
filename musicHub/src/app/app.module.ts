@@ -31,6 +31,7 @@ import { DiscoverListComponent } from './discover-list/discover-list.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { EventCardComponent } from './event-card/event-card.component';
 import { MusicCardComponent } from './music-card/music-card.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { MusicCardComponent } from './music-card/music-card.component';
     ProfilePageComponent,
     EventCardComponent,
     MusicCardComponent,
+    LoginPageComponent,
   ],
   imports: [
     MatTabsModule,
@@ -73,6 +75,7 @@ import { MusicCardComponent } from './music-card/music-card.component';
       { path: 'searchestablishments', component: EstablishmentsPageComponent },
       { path: 'musicianprofile', component: ProfilePageComponent },
       { path: 'profile', component: ProfilePageComponent },
+      { path: 'login', component: LoginPageComponent },
     ]),
   ],
   providers: [],
