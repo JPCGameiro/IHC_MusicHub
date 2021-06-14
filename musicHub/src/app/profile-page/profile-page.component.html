@@ -10,11 +10,16 @@
     </div>
     <p>Esta é minha bio exemplo para ocupar espaço.</p>
   </div>
-  <div id="posts">
-    <div class="col-md-7 col-md-offset-1 d-flex justify-content-center">
+  <mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Musicas">
+      <div id="posts">
+        <div class="col-md-7 col-md-offset-1 d-flex justify-content-center">
+          <app-music-card></app-music-card>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Posts">
       <button>new post</button>
-      <app-music-card></app-music-card>
-      <app-event-card></app-event-card>
       <app-card></app-card>
       <br />
       <br />
@@ -24,8 +29,10 @@
       <app-card></app-card>
       <br />
       <br />
-    </div>
-  </div>
+    </mat-tab>
+
+    <mat-tab label="Third"> Conteúdo 3 </mat-tab>
+  </mat-tab-group>
 </div>
 
 <!-- The Modal -->

@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
@@ -51,6 +52,7 @@ import { MusicCardComponent } from './music-card/music-card.component';
     MusicCardComponent,
   ],
   imports: [
+    MatTabsModule,
     BrowserModule,
     MatCardModule,
     NoopAnimationsModule,
