@@ -76,6 +76,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
       { path: 'musicianprofile', component: ProfilePageComponent },
       { path: 'profile', component: ProfilePageComponent },
       { path: 'login', component: LoginPageComponent },
+      { path: 'establishmentprofile', component: ProfilePageComponent}
     ]),
   ],
   providers: [],

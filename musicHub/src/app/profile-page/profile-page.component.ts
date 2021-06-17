@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile-page',
@@ -32,8 +33,12 @@ export class ProfilePageComponent implements OnInit {
   //     modal.style.display = "none";
   //   }
   // }
+  bigMx : boolean = true;
 
-  constructor() {}
+  toogleBigMx(){
+    this.bigMx = !this.bigMx;
+  }
+  constructor(public router: Router) {}
 
   ngOnInit(): void {}
 }

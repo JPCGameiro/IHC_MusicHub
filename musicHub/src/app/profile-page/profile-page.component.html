@@ -5,33 +5,49 @@
 <div class="main">
   <div>
     <div id="image-name">
-      <img src="../../assets/userAvatar.jpeg" alt="user avatar" />
-      <h1>Juan Lessa</h1>
+      <img src="../../assets/userAvatar.jpeg" alt="user avatar" *ngIf="router.url === '/musicianprofile' || router.url === '/profile'"/>
+      <img src="https://media.istockphoto.com/photos/bartender-wearing-apron-and-smiling-picture-id1194844600?k=6&m=1194844600&s=612x612" alt="user avatar"  *ngIf="router.url === '/establishmentprofile'"/>      
+      <h1 *ngIf="router.url === '/musicianprofile' || router.url === '/profile'">Juan Lessa</h1>
+      <h1 *ngIf="router.url === '/establishmentprofile'">João Batista's Place</h1>
     </div>
     <p>Esta é minha bio exemplo para ocupar espaço.</p>
   </div>
   <mat-tab-group mat-align-tabs="center">
-    <mat-tab label="Musicas">
+    <mat-tab label="Musics" *ngIf="router.url === '/musicianprofile' || router.url === '/profile'">
       <div id="posts">
+        <button *ngIf="router.url === '/profile'">new song</button>
         <div class="col-md-7 col-md-offset-1 d-flex justify-content-center">
           <app-music-card></app-music-card>
         </div>
       </div>
     </mat-tab>
     <mat-tab label="Posts">
-      <button>new post</button>
-      <app-card></app-card>
-      <br />
-      <br />
-      <app-card></app-card>
-      <br />
-      <br />
-      <app-card></app-card>
-      <br />
-      <br />
+      <button *ngIf="router.url === '/profile'">new post</button>
+      <br><br>
+      <div class="col-md-6 col-md-offset-1 d-flex justify-content-center">
+        <app-card></app-card>
+        <br />
+        <br />
+        <app-card></app-card>
+        <br />
+        <br />
+        <app-card></app-card>
+        <br />
+        <br />
+      </div>
+      
+      <div class="container mycontainer" *ngIf="router.url === '/musicianprofile' || router.url === '/establishmentprofile'" >
+        <div id="mensagix"class="col-md-4" *ngIf=bigMx>
+          <app-messenger></app-messenger>
+        </div>
+      </div>
+
     </mat-tab>
 
-    <mat-tab label="Third"> Conteúdo 3 </mat-tab>
+    <mat-tab label="Events">
+      <button *ngIf="router.url === '/profile'">new event</button>
+      <app-event-card></app-event-card>
+    </mat-tab>
   </mat-tab-group>
 </div>
 
