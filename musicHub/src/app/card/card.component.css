@@ -14,6 +14,16 @@
   background-size: cover;
 }
 
+.imagesize{
+  background-size: cover;
+  height: 31px;
+}
+
+.imgsizeana{
+  background-size: cover;
+  height: 36px;
+}
+
 .icons-row{
 display: flex;
 flex-direction: row;
