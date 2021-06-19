@@ -18,9 +18,14 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 800px;
+  width: 80em;
   background: #444753;
   border-radius: 5px;
+}
+
+.dogo{
+  height: 50px;
+  border-radius: 30px;
 }
 
 .people-list {
@@ -77,8 +82,13 @@ body {
   
 }
 
+.name{
+  color: #D8DADF;
+  font-weight: 600;
+}
+
 .chat {
-  width: 490px;
+  width: 59em;
   float:left;
   background: #F2F5F8;
   border-top-right-radius: 5px;
