@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { EmojiButton } from '@joeattardi/emoji-button';
 
 @Component({
@@ -9,15 +10,12 @@ import { EmojiButton } from '@joeattardi/emoji-button';
 export class MessengerComponent implements OnInit {
   toogleMX :boolean;
   indivMX
-  
-
-  
 
   toogleMXshow(){
     this.toogleMX = !this.toogleMX;
   }
 
-
+  public router : Router
 
   ngOnInit(): void {
     this.toogleMX = true;

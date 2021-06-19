@@ -20,7 +20,8 @@
                     <mat-icon (click)="toogleMXshow()" class="backwards-icon">keyboard_arrow_left</mat-icon>
                     <mat-card-header>
                         <div mat-card-avatar class="example-header-image"></div>
-                        <mat-card-title class="myUser">Foo fighters</mat-card-title>
+                        <mat-card-title *ngIf="router.url === '/'" class="myUser">Foo fighters</mat-card-title>
+                        <mat-card-title *ngIf="router.url === '/musicianprofile'" class="myUser" >Juan Lessa</mat-card-title>
                     </mat-card-header>
                 </div>
                 <div class="indiv-bottom">

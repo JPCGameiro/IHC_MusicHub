@@ -8,7 +8,7 @@
   <a href="/establishments">Establishments</a>
   <div id="navbar-right">
     <a><span class="glyphicon glyphicon-bell"></span></a>
-    <a><i class="fab fa-facebook-messenger"></i></a>
+    <a href="/messenger"><i class="fab fa-facebook-messenger"></i></a>
     <a href="/profile"><span class="glyphicon glyphicon-user"></span></a>
     <a href="/login"><span class="glyphicon glyphicon-log-out" ></span></a>
   </div>
@@ -21,7 +21,7 @@
   <a href="/establishments">Establishments</a>
   <div id="navbar-right">
     <a><span class="glyphicon glyphicon-bell"></span></a>
-    <a><i class="fab fa-facebook-messenger"></i></a>
+    <a href="/messenger"><i class="fab fa-facebook-messenger"></i></a>
     <a href="/profile"><span class="glyphicon glyphicon-user"></span></a>
     <a href="/login"><span class="glyphicon glyphicon-log-out"></span></a>
   </div>
@@ -34,7 +34,7 @@
   <a href="/establishments">Establishments</a>
   <div id="navbar-right">
     <a><span class="glyphicon glyphicon-bell"></span></a>
-    <a><i class="fab fa-facebook-messenger"></i></a>
+    <a href="/messenger"><i class="fab fa-facebook-messenger"></i></a>
     <a href="/profile" class="active"><span class="glyphicon glyphicon-user"></span></a>
     <a href="/login"><span class="glyphicon glyphicon-log-out"></span></a>
   </div>
@@ -47,7 +47,20 @@
   <a href="/establishments" class="active">Establishments</a>
   <div id="navbar-right">
     <a><span class="glyphicon glyphicon-bell"></span></a>
-    <a><i class="fab fa-facebook-messenger"></i></a>
+    <a href="/messenger"><i class="fab fa-facebook-messenger"></i></a>
+    <a href="/profile"><span class="glyphicon glyphicon-user"></span></a>
+    <a href="/login"><span class="glyphicon glyphicon-log-out"></span></a>
+  </div>
+</div>
+
+<div id="navbar" *ngIf="router.url === '/messenger'">
+  <a href="/" id="logo">MusicHUB</a>
+  <a href="/">Home</a>
+  <a href="/musicians">Musicians</a>
+  <a href="/establishments">Establishments</a>
+  <div id="navbar-right">
+    <a><span class="glyphicon glyphicon-bell"></span></a>
+    <a href="/messenger" class="active"><i class="fab fa-facebook-messenger"></i></a>
     <a href="/profile"><span class="glyphicon glyphicon-user"></span></a>
     <a href="/login"><span class="glyphicon glyphicon-log-out"></span></a>
   </div>

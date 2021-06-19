@@ -13,14 +13,6 @@
     <p>Esta é minha bio exemplo para ocupar espaço.</p>
   </div>
   <mat-tab-group mat-align-tabs="center">
-    <mat-tab label="Musics" *ngIf="router.url === '/musicianprofile' || router.url === '/profile'">
-      <div id="posts">
-        <button *ngIf="router.url === '/profile'">new song</button>
-        <div class="col-md-7 col-md-offset-1 d-flex justify-content-center">
-          <app-music-card></app-music-card>
-        </div>
-      </div>
-    </mat-tab>
     <mat-tab label="Posts">
       <button *ngIf="router.url === '/profile'">new post</button>
       <br><br>
@@ -29,13 +21,15 @@
         <br />
         <br />
         <app-card></app-card>
-        <br />
-        <br />
-        <app-card></app-card>
-        <br />
-        <br />
       </div>
-      
+      <mat-tab label="Musics" *ngIf="router.url === '/musicianprofile' || router.url === '/profile'">
+        <div id="posts">
+          <button *ngIf="router.url === '/profile'">new song</button>
+          <div class="col-md-7 col-md-offset-1 d-flex justify-content-center">
+            <app-music-card></app-music-card>
+          </div>
+        </div>
+      </mat-tab>
       <div class="container mycontainer" *ngIf="router.url === '/musicianprofile' || router.url === '/establishmentprofile'" >
         <div id="mensagix"class="col-md-4" *ngIf=bigMx>
           <app-messenger></app-messenger>

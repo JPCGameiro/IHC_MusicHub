@@ -33,6 +33,7 @@ import { EventCardComponent } from './event-card/event-card.component';
 import { MusicCardComponent } from './music-card/music-card.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { MenssegerPageComponent } from './mensseger-page/mensseger-page.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { RegisterPageComponent } from './register-page/register-page.component';
     MusicCardComponent,
     LoginPageComponent,
     RegisterPageComponent,
+    MenssegerPageComponent,
   ],
   imports: [
     MatTabsModule,
@@ -80,6 +82,7 @@ import { RegisterPageComponent } from './register-page/register-page.component';
       { path: 'login', component: LoginPageComponent },
       { path: 'establishmentprofile', component: ProfilePageComponent},
       { path: 'register', component: RegisterPageComponent},
+      { path: 'messenger', component: MenssegerPageComponent}
     ]),
   ],
   providers: [],
