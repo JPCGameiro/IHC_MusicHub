@@ -117,57 +117,58 @@
   font-family: monospace
 }
 
-.notifications {
-  width: 300px;
-  height: 0px;
-  opacity: 0;
+
+
+
+
+
+.dropdown-menu{
+  top: 60px;
+  position:fixed;
+  right: 0px;
+  left: unset;
+  width: 360px;
+  box-shadow: 0px 5px 7px -1px #c1c1c1;
+  padding-bottom: 0px;
+  padding: 0px;
+  
+}
+.dropdown-menu:before{
+  content: "";
   position: absolute;
-  top: 63px;
-  right: 62px;
-  border-radius: 5px 0px 5px 5px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  top: -20px;
+  right: 12px;
+  border:10px solid #343A40;
+  border-color: transparent transparent #343A40 transparent;
 }
-
-.notifications h2 {
-  font-size: 14px;
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-  color: #999
+.head{
+  padding:5px 15px;
+  border-radius: 3px 3px 0px 0px;
 }
-
-.notifications h2 span {
-  color: #f00
+.footer{
+  padding:5px 15px;
+  border-radius: 0px 0px 3px 3px; 
 }
-
-.notifications-item {
-  display: flex;
-  border-bottom: 1px solid #eee;
-  padding: 6px 9px;
-  margin-bottom: 0px;
-  cursor: pointer
+.notification-box{
+  padding: 10px 0px; 
 }
-
-.notifications-item:hover {
-  background-color: #eee
+.bg-gray{
+  background-color: #eee;
 }
-
-.notifications-item img {
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin-right: 9px;
-  border-radius: 50%;
-  margin-top: 2px
-}
-
-.notifications-item .text h4 {
-  color: #777;
-  font-size: 16px;
-  margin-top: 3px
-}
-
-.notifications-item .text p {
-  color: #aaa;
-  font-size: 12px
+@media (max-width: 640px) {
+    .dropdown-menu{
+      top: 50px;
+      left: -16px;  
+      width: 290px;
+      z-index: 1;
+    } 
+    .nav{
+      display: block;
+    }
+    .nav .nav-item,.nav .nav-item a{
+      padding-left: 0px;
+    }
+    .message{
+      font-size: 13px;
+    }
 }
