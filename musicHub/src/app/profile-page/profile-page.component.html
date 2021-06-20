@@ -17,10 +17,53 @@
       <button *ngIf="router.url === '/profile'">new post</button>
       <br><br>
       <div class="col-md-6 col-md-offset-1 d-flex justify-content-center">
-        <app-card></app-card>
-        <br />
-        <br />
-        <app-card></app-card>
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Juan Lessa</mat-card-title>
+            <mat-card-subtitle>Juan Lessa new album!</mat-card-subtitle>
+          </mat-card-header>
+          <img class="mat-card-image" style="margin-bottom: 8px;" src="assets/post5.jpg" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <div class="icons-row">
+              <span aria-label="favourite" class="btn-style icon" (click)="elementdisable = !elementdisable"><mat-icon color="{{elementdisable ? '' : 'warn'}}">{{elementdisable ? 'favorite_border' : 'favorite'}}</mat-icon></span>
+              <span aria-label="favourite" class="btn-style icon">
+              <mat-icon>share</mat-icon>
+              </span>
+              <span a ria-label="favourite" class="btn-style icon push-right">
+                <mat-icon>send</mat-icon>
+              </span>
+            </div>
+            <p>
+              Checkout my new album. Is awesome!!
+            </p>
+          </mat-card-content>
+        </mat-card>
+        <br><br>
+
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Juan Lessa</mat-card-title>
+            <mat-card-subtitle>Amazinf performance!</mat-card-subtitle>
+          </mat-card-header>
+          <img class="mat-card-image" style="margin-bottom: 8px;" src="assets/post4.jpg" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <div class="icons-row">
+              <span aria-label="favourite" class="btn-style icon" (click)="elementdisable = !elementdisable"><mat-icon color="{{elementdisable ? '' : 'warn'}}">{{elementdisable ? 'favorite_border' : 'favorite'}}</mat-icon></span>
+              <span aria-label="favourite" class="btn-style icon">
+              <mat-icon>share</mat-icon>
+              </span>
+              <span a ria-label="favourite" class="btn-style icon push-right">
+                <mat-icon>send</mat-icon>
+              </span>
+            </div>
+            <p>
+              Metallica played like godddds!!!!
+            </p>
+          </mat-card-content>
+        </mat-card>
+        <br><br>
       </div>
       <mat-tab label="Musics" *ngIf="router.url === '/musicianprofile' || router.url === '/profile'">
         <div id="posts">

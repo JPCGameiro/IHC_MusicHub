@@ -33,6 +33,7 @@ export class ProfilePageComponent implements OnInit {
   //     modal.style.display = "none";
   //   }
   // }
+  elementdisable = true
   bigMx : boolean = true;
 
   toogleBigMx(){
