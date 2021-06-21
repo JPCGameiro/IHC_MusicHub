@@ -59,8 +59,37 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 660px;
 }
-
+.modal-content form {
+  font-weight: normal;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+}
+.modal-content form div label {
+  margin: 0;
+  padding: 0;
+}
+.modal-content form div p {
+  font-weight: normal;
+}
+.modal-content form div {
+  padding: 0;
+  margin-top: 26px;
+}
+.modal-content form button {
+  background-color: #3a33e6;
+  display: block;
+  margin: auto;
+  border-radius: 1rem;
+  width: 100%;
+  height: 5rem;
+  border: 0;
+  font-size: 2.5rem;
+  color: white;
+}
 /* The Close Button */
 .close {
   color: #aaa;
@@ -89,6 +118,14 @@
   
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.example-header-image1 {
+  background-image: url('https://media.istockphoto.com/photos/bartender-wearing-apron-and-smiling-picture-id1194844600?k=6&m=1194844600&s=612x612');
+  background-size: cover;
+}
+.example-header-image2 {
+  background-image: url("../../assets/userAvatar.jpeg");
   background-size: cover;
 }
 
@@ -127,4 +164,22 @@ font-family: 'Material Icons';
 .btn-style:not([disabled]):hover {
   transform: scale(1.2);
   transition: ease;
+}
+#box {
+  cursor: pointer;
+  width: 100%;
+  height: 70px;
+
+  margin: 0 auto 26px auto;
+  border: 1px solid #aaaaaa;
+}
+#box:hover {
+  background-color: #f0f5f5;
+}
+#box p {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 48px;
+  color: #aaaaaa;
 }
