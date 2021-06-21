@@ -43,7 +43,9 @@
         *ngIf="router.url === '/musicianprofile' || router.url === '/profile'"
       >
         <div id="posts">
-          <button *ngIf="router.url === '/profile'">new song</button>
+          <button *ngIf="router.url === '/profile'" (click)="newPost()">
+            new song
+          </button>
           <div class="col-md-7 col-md-offset-1 d-flex justify-content-center">
             <app-music-card></app-music-card>
           </div>
@@ -63,7 +65,9 @@
     </mat-tab>
 
     <mat-tab label="Events">
-      <button *ngIf="router.url === '/profile'">new event</button>
+      <button *ngIf="router.url === '/profile'" (click)="newPost()">
+        new event
+      </button>
       <app-event-card></app-event-card>
     </mat-tab>
   </mat-tab-group>
