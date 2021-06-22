@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormControl, FormGroup } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-search-div',
@@ -9,8 +10,14 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class SearchDivComponent implements OnInit {
 
-  constructor(public router: Router) { }
+  constructor(
+    public router: Router,
+    private snackBar: MatSnackBar) { }
   ngOnInit(): void { }
+
+  showSnack(){
+    this.snackBar.open("Search Completed")
+  }
 
   searchForm = new FormGroup({
     establishment: new FormControl(''),

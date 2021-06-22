@@ -37,10 +37,10 @@
             </div>
         </div>
         <br>
-        <div *ngIf="router.url === '/musicians'" class="button_cont" align="center"><button type="submit" class="example_c"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</button></div>
-        <div *ngIf="router.url === '/establishments'" class="button_cont" align="center"><button type="submit" class="example_c"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</button></div>
-        <div *ngIf="router.url.startsWith('/searchmusicians?')" class="button_cont" align="center"><button type="submit" class="example_c"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</button></div>
-        <div *ngIf="router.url.startsWith('/searchestablishments?')" class="button_cont" align="center"><button type="submit" class="example_c"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</button></div>
+        <div *ngIf="router.url === '/musicians'" class="button_cont" align="center"><button type="submit" class="example_c" (click)="showSnack()"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</button></div>
+        <div *ngIf="router.url === '/establishments'" class="button_cont" align="center"><button type="submit" class="example_c" (click)="showSnack()"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</button></div>
+        <div *ngIf="router.url.startsWith('/searchmusicians?')" class="button_cont" align="center"><button type="submit" class="example_c" (click)="showSnack()"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</button></div>
+        <div *ngIf="router.url.startsWith('/searchestablishments?')" class="button_cont" align="center"><button type="submit" class="example_c" (click)="showSnack()"><span class="glyphicon glyphicon-search"></span> Let's Gooo!!!</button></div>
         <br>
     </form>
 </div>

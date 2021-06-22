@@ -34,6 +34,7 @@ import { MusicCardComponent } from './music-card/music-card.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { MenssegerPageComponent } from './mensseger-page/mensseger-page.component';
+import { MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,7 @@ import { MenssegerPageComponent } from './mensseger-page/mensseger-page.componen
     MusicCardComponent,
     LoginPageComponent,
     RegisterPageComponent,
-    MenssegerPageComponent,
+    MenssegerPageComponent
   ],
   imports: [
     MatTabsModule,
@@ -71,6 +72,7 @@ import { MenssegerPageComponent } from './mensseger-page/mensseger-page.componen
     CommonModule,
     ReactiveFormsModule,
     MatInputModule,
+    MatSnackBarModule,
     RouterModule.forRoot([
       { path: 'musicians', component: MusiciansPageComponent },
       { path: '', component: HomePageComponent },
@@ -85,7 +87,9 @@ import { MenssegerPageComponent } from './mensseger-page/mensseger-page.componen
       { path: 'messenger', component: MenssegerPageComponent}
     ]),
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 2700}}
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

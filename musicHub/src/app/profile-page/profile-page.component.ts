@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
 @Component({
@@ -46,12 +47,15 @@ export class ProfilePageComponent implements OnInit {
   post() {
     let modal = document.getElementById('newPostModal');
     modal.style.display = 'none';
+    this._snackBar.open("Added with success!")
   }
 
   toogleBigMx() {
     this.bigMx = !this.bigMx;
   }
-  constructor(public router: Router) {}
+  constructor(
+    public router: Router,
+    private _snackBar: MatSnackBar ) { }
 
   ngOnInit(): void {}
 }
