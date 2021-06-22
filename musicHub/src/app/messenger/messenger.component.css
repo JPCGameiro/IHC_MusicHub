@@ -69,6 +69,10 @@
     box-shadow: rgba(33, 35, 38, 0.10) 0px -10px 10px -10px;
 }
 
+.btn-style1{
+    height: 40px;
+}
+
 .myUser{
     margin-top:5px;
 }
@@ -89,31 +93,32 @@ mat-card-header{
     margin-right: 10px;
   }
   
-  .example-full-width {
+.example-full-width {
     width: 100%;
   }
 
-  .btn-style:not([disabled]):hover {
+.btn-style:not([disabled]):hover {
     transform: scale(1.2);
     transition: ease;
     cursor: pointer;
   }
 
-  .myinput{
+
+.myinput{
       font-size: 18px;
   }
 
-  ::ng-deep .mat-focused .mat-form-field-label {
+::ng-deep .mat-focused .mat-form-field-label {
     /*change color of label*/
     color: grey !important;
    }
   
-   ::ng-deep.mat-form-field-underline {
+::ng-deep.mat-form-field-underline {
     /*change color of underline*/
     background-color: grey !important;
   } 
   
-  ::ng-deep.mat-form-field-ripple {
+::ng-deep.mat-form-field-ripple {
    /*change color of underline when focused*/
    background-color: green !important;;
   }
